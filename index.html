@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodfinda Restaurant</title>
+    <link rel="stylesheet" href="fontawesome/css/all.min.css"> <!-- https://fontawesome.com/ -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet" /> <!-- https://fonts.google.com/ -->
+    <link rel="stylesheet" href="css/foodfinda.css">
+
+</head>
+<body>
+  <script src="js/script.js"></script>
+  <div class="tm-container">
+    <div class="tm-row">
+      <!-- Site Header -->
+      <div class="tm-left">
+        <div class="tm-left-inner">
+          <div class="tm-site-header">
+            <i class="fas fa-coffee fa-3x tm-site-logo"></i>
+            <h1 class="tm-site-name">Foodfinda Restaurant</h1>
+          </div>
+          <nav class="tm-site-nav">
+            <ul class="tm-site-nav-ul">
+              <li class="tm-page-nav-item">
+                <a href="#drink" class="tm-page-link active">
+                  <i class="fas fa-mug-hot tm-page-link-icon"></i>
+                  <span>Drink Menu</span>
+                </a>
+              </li>
+              <li class="tm-page-nav-item">
+                <a href="#about" class="tm-page-link">
+                  <i class="fas fa-users tm-page-link-icon"></i>
+                  <span>About Us</span>
+                </a>
+              </li>
+              <li class="tm-page-nav-item">
+                <a href="#special" class="tm-page-link">
+                  <i class="fas fa-glass-martini tm-page-link-icon"></i>
+                  <span>Special Items</span>
+                </a>
+              </li>
+              <li class="tm-page-nav-item">
+                <a href="#contact" class="tm-page-link">
+                  <i class="fas fa-comments tm-page-link-icon"></i>
+                  <span>Contact</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>        
+      </div>
+      <div class="tm-right">
+        <main class="tm-main">
+          <div id="drink" class="tm-page-content">
+           <!-- Drink Menu Page -->
+  <nav class="tm-black-bg tm-drinks-nav">
+    <ul>
+      <li>
+        <a href="#" class="tm-tab-link active" data-id="cold">Iced Coffee</a>
+      </li>
+      <li>
+        <a href="#" class="tm-tab-link" data-id="hot">Hot Coffee</a>
+      </li>
+      <li>
+        <a href="#" class="tm-tab-link" data-id="juice">Fruit Juice</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div id="cold" class="tm-tab-content">
+    <div class="tm-list">
+      <div class="tm-list-item">
+        <img src="img/iced-americano.png" alt="Iced Americano" class="tm-list-item-img">
+        <div class="tm-black-bg tm-list-item-text">
+          <h3 class="tm-list-item-name">Iced Americano<span class="tm-list-item-price">$10.25</span></h3>
+          <p class="tm-list-item-description">A bold and refreshing iced americano with a perfect balance of espresso and water. Ideal for a hot day!</p>
+          <button class="buy-now-btn">Buy Now</button>
+          <div class="order-quantity" style="display: none;">
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" min="1" value="1">
+            <button class="place-order">Place Order</button>
+          </div>
+        </div>
+      </div>
+      <!-- Repeat for other cold drinks -->
+      <div class="tm-list-item">
+        <img src="img/iced-cappuccino.png" alt="Iced Cappuccino" class="tm-list-item-img">
+        <div class="tm-black-bg tm-list-item-text">
+          <h3 class="tm-list-item-name">Iced Cappuccino<span class="tm-list-item-price">$12.50</span></h3>
+          <p class="tm-list-item-description">A smooth and creamy iced cappuccino made with freshly brewed espresso, chilled milk, and a frothy top.</p>
+          <button class="buy-now-btn">Buy Now</button>
+          <div class="order-quantity" style="display: none;">
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" min="1" value="1">
+            <button class="place-order">Place Order</button>
+          </div>
+        </div>
+      </div>
+      <div class="tm-list-item">
+        <img src="img/iced-espresso.png" alt="Iced Espresso" class="tm-list-item-img">
+        <div class="tm-black-bg tm-list-item-text">
+          <h3 class="tm-list-item-name">Iced Espresso<span class="tm-list-item-price">$14.25</span></h3>
+          <p class="tm-list-item-description">A classic iced espresso made with rich and bold espresso shots, perfect for coffee lovers!</p>
+          <button class="buy-now-btn">Buy Now</button>
+          <div class="order-quantity" style="display: none;">
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" min="1" value="1">
+            <button class="place-order">Place Order</button>
+          </div>
+        </div>
+      </div>
+      <div class="tm-list-item">
+        <img src="img/iced-latte.png" alt="Iced Latte" class="tm-list-item-img">
+        <div class="tm-black-bg tm-list-item-text">
+          <h3 class="tm-list-item-name">Iced Latte<span class="tm-list-item-price">$11.50</span></h3>
+          <p class="tm-list-item-description">A chilled blend of espresso, milk, and ice, offering a smooth and refreshing taste for every coffee lover.</p>
+          <button class="buy-now-btn">Buy Now</button>
+          <div class="order-quantity" style="display: none;">
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" min="1" value="1">
+            <button class="place-order">Place Order</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="hot" class="tm-tab-content">
+    <div class="tm-list">
+      <div class="tm-list-item">
+        <img src="img/hot-americano.png" alt="Hot Americano" class="tm-list-item-img">
+        <div class="tm-black-bg tm-list-item-text">
+          <h3 class="tm-list-item-name">Hot Americano<span class="tm-list-item-price">$8.50</span></h3>
+          <p class="tm-list-item-description">A rich and full-bodied hot americano brewed with high-quality espresso and hot water for a bold taste.</p>
+          <button class="buy-now-btn">Buy Now</button>
+          <div class="order-quantity" style="display: none;">
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" min="1" value="1">
+            <button class="place-order">Place Order</button>
+          </div>
+        </div>
+      </div>
+      <!-- Repeat for other hot drinks -->
+      <div class="tm-list-item">
+        <img src="img/hot-cappuccino.png" alt="Hot Cappuccino" class="tm-list-item-img">
+        <div class="tm-black-bg tm-list-item-text">
+          <h3 class="tm-list-item-name">Hot Cappuccino<span class="tm-list-item-price">$9.50</span></h3>
+          <p class="tm-list-item-description">A classic cappuccino with rich espresso, steamed milk, and topped with a creamy foam.</p>
+          <button class="buy-now-btn">Buy Now</button>
+          <div class="order-quantity" style="display: none;">
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" min="1" value="1">
+            <button class="place-order">Place Order</button>
+          </div>
+        </div>
+      </div>
+      <div class="tm-list-item">
+        <img src="img/hot-espresso.png" alt="Hot Espresso" class="tm-list-item-img">
+        <div class="tm-black-bg tm-list-item-text">
+          <h3 class="tm-list-item-name">Hot Espresso<span class="tm-list-item-price">$7.50</span></h3>
+          <p class="tm-list-item-description">A concentrated hot espresso shot that is rich, intense, and full of flavor, perfect for espresso lovers.</p>
+          <button class="buy-now-btn">Buy Now</button>
+          <div class="order-quantity" style="display: none;">
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" min="1" value="1">
+            <button class="place-order">Place Order</button>
+          </div>
+        </div>
+      </div>
+      <div class="tm-list-item">
+        <img src="img/hot-latte.png" alt="Hot Latte" class="tm-list-item-img">
+        <div class="tm-black-bg tm-list-item-text">
+          <h3 class="tm-list-item-name">Hot Latte<span class="tm-list-item-price">$6.50</span></h3>
+          <p class="tm-list-item-description">A smooth and velvety latte made with rich espresso and steamed milk, perfect for a cozy moment.</p>
+          <button class="buy-now-btn">Buy Now</button>
+          <div class="order-quantity" style="display: none;">
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" min="1" value="1">
+            <button class="place-order">Place Order</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="juice" class="tm-tab-content">
+    <div class="tm-list">
+      <div class="tm-list-item">
+        <img src="img/smoothie-1.png" alt="Strawberry Smoothie" class="tm-list-item-img">
+        <div class="tm-black-bg tm-list-item-text">
+          <h3 class="tm-list-item-name">Strawberry Smoothie<span class="tm-list-item-price">$12.50</span></h3>
+          <p class="tm-list-item-description">A sweet and refreshing smoothie made with fresh strawberries, yogurt, and a touch of honey.</p>
+          <button class="buy-now-btn">Buy Now</button>
+          <div class="order-quantity" style="display: none;">
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" min="1" value="1">
+            <button class="place-order">Place Order</button>
+          </div>
+        </div>
+      </div>
+      <!-- Repeat for other juice items -->
+      <div class="tm-list-item">
+        <img src="img/smoothie-2.png" alt="Red Berry Smoothie" class="tm-list-item-img">
+        <div class="tm-black-bg tm-list-item-text">
+          <h3 class="tm-list-item-name">Red Berry Smoothie<span class="tm-list-item-price">$14.50</span></h3>
+          <p class="tm-list-item-description">A delicious mix of red berries, banana, and yogurt, blended into a refreshing smoothie.</p>
+          <button class="buy-now-btn">Buy Now</button>
+          <div class="order-quantity" style="display: none;">
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" min="1" value="1">
+            <button class="place-order">Place Order</button>
+          </div>
+        </div>
+      </div>
+      <div class="tm-list-item">
+        <img src="img/smoothie-3.png" alt="Pineapple Smoothie" class="tm-list-item-img">
+        <div class="tm-black-bg tm-list-item-text">
+          <h3 class="tm-list-item-name">Pineapple Smoothie<span class="tm-list-item-price">$16.50</span></h3>
+          <p class="tm-list-item-description">A tropical smoothie made with fresh pineapple, coconut milk, and a splash of lime juice.</p>
+          <button class="buy-now-btn">Buy Now</button>
+          <div class="order-quantity" style="display: none;">
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" min="1" value="1">
+            <button class="place-order">Place Order</button>
+          </div>
+        </div>
+      </div>
+      <div class="tm-list-item">
+        <img src="img/smoothie-4.png" alt="Spinach Smoothie" class="tm-list-item-img">
+        <div class="tm-black-bg tm-list-item-text">
+          <h3 class="tm-list-item-name">Spinach Smoothie<span class="tm-list-item-price">$18.50</span></h3>
+          <p class="tm-list-item-description">A healthy green smoothie made with fresh spinach, banana, apple, and a hint of lemon.</p>
+          <button class="buy-now-btn">Buy Now</button>
+          <div class="order-quantity" style="display: none;">
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" min="1" value="1">
+            <button class="place-order">Place Order</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Drink Menu Modal -->
+<div id="drink-modal" class="modal">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <h2>Order Confirmation</h2>
+    <p>Call this number to place the order: <strong>+6789876545</strong></p>
+    <button class="modal-ok-btn">OK</button>
+  </div>
+</div>
+
+
+  <!-- End Drink Menu Page -->
+
+          </div>
+
+          <!-- About Us Page -->
+          <div id="about" class="tm-page-content">
+            <div class="tm-black-bg tm-mb-20 tm-about-box-1">              
+              <h2 class="tm-text-primary tm-about-header">About Foodfinda</h2>
+              <div class="tm-list-item tm-list-item-2">                
+                <img src="img/about-1.png" alt="Image" class="tm-list-item-img tm-list-item-img-big">
+                <div class="tm-list-item-text-2">
+                  <p>Welcome to Foodfinda, where we bring you the best culinary experiences. Whether you're craving a quick snack or a full-course meal, we have something for everyone.</p>
+                  <p>Visit us today or order online for a delicious meal delivered straight to your door. Don't forget to tell your friends about us!</p>
+                </div>                
+              </div>
+            </div>
+            <div class="tm-black-bg tm-mb-20 tm-about-box-2">              
+              <div class="tm-list-item tm-list-item-2">                
+                <div class="tm-list-item-text-2">
+                  <h2 class="tm-text-primary">How we began</h2>
+                  <p>Foodfinda was born out of a love for good food and great experiences. Our journey started with the aim to provide a space where delicious food meets exceptional service. We’ve worked tirelessly to create a menu that will leave you craving for more.</p>                  
+                </div>                
+                <img src="img/about-2.png" alt="Image" class="tm-list-item-img tm-list-item-img-big tm-img-right">                
+              </div>
+              <p>If you wish to support us, please feel free to reach out. We're always happy to hear from our customers! Thank you for being a part of our story.</p>
+            </div>
+          </div>
+          <!-- end About Us Page -->
+
+         <!-- Special Items Page -->
+<div id="special" class="tm-page-content">
+  <div class="tm-special-items">
+    <div class="tm-black-bg tm-special-item">
+      <img src="img/special-01.jpg" alt="Image">
+      <div class="tm-special-item-description">
+        <h2 class="tm-text-primary tm-special-item-title">Signature Dish</h2>
+        <p class="tm-special-item-text">Our Signature Dish is a unique blend of flavors, featuring the finest ingredients. It's a must-try for every food lover!</p>  
+        <button class="buy-now-btn">Buy Now</button>
+        <div class="order-quantity" style="display: none;">
+          <label for="quantity">Quantity:</label>
+          <input type="number" id="quantity" min="1" value="1">
+          <button class="place-order">Place Order</button>
+        </div>
+      </div>
+    </div>
+    <div class="tm-black-bg tm-special-item">
+      <img src="img/special-02.jpg" alt="Image">
+      <div class="tm-special-item-description">
+        <h2 class="tm-text-primary tm-special-item-title">Classic Burger</h2>
+        <p class="tm-special-item-text">A juicy, perfectly grilled burger with fresh toppings. A timeless favorite that's loved by all.</p>  
+        <button class="buy-now-btn">Buy Now</button>
+        <div class="order-quantity" style="display: none;">
+          <label for="quantity">Quantity:</label>
+          <input type="number" id="quantity" min="1" value="1">
+          <button class="place-order">Place Order</button>
+        </div>
+      </div>
+    </div>
+    <div class="tm-black-bg tm-special-item">
+      <img src="img/special-03.jpg" alt="Image">
+      <div class="tm-special-item-description">
+        <h2 class="tm-text-primary tm-special-item-title">Vegetarian Delight</h2>
+        <p class="tm-special-item-text">A delicious vegetarian platter made with fresh seasonal vegetables, served with a tangy dip.</p>  
+        <button class="buy-now-btn">Buy Now</button>
+        <div class="order-quantity" style="display: none;">
+          <label for="quantity">Quantity:</label>
+          <input type="number" id="quantity" min="1" value="1">
+          <button class="place-order">Place Order</button>
+        </div>
+      </div>
+    </div>
+    <div class="tm-black-bg tm-special-item">
+      <img src="img/special-04.jpg" alt="Image">
+      <div class="tm-special-item-description">
+        <h2 class="tm-text-primary tm-special-item-title">Grilled Salmon</h2>
+        <p class="tm-special-item-text">Perfectly grilled salmon served with a citrus glaze and accompanied by a side of roasted vegetables.</p>  
+        <button class="buy-now-btn">Buy Now</button>
+        <div class="order-quantity" style="display: none;">
+          <label for="quantity">Quantity:</label>
+          <input type="number" id="quantity" min="1" value="1">
+          <button class="place-order">Place Order</button>
+        </div>
+      </div>
+    </div>      
+    <div class="tm-black-bg tm-special-item">
+      <img src="img/special-05.jpg" alt="Image">
+      <div class="tm-special-item-description">
+        <h2 class="tm-text-primary tm-special-item-title">Spicy Ramen</h2>
+        <p class="tm-special-item-text">A flavorful and spicy ramen bowl made with a rich broth, tender noodles, and savory toppings.</p>  
+        <button class="buy-now-btn">Buy Now</button>
+        <div class="order-quantity" style="display: none;">
+          <label for="quantity">Quantity:</label>
+          <input type="number" id="quantity" min="1" value="1">
+          <button class="place-order">Place Order</button>
+        </div>
+      </div>
+    </div>
+    <div class="tm-black-bg tm-special-item">
+      <img src="img/special-06.jpg" alt="Image">
+      <div class="tm-special-item-description">
+        <h2 class="tm-text-primary tm-special-item-title">Tropical Smoothie</h2>
+        <p class="tm-special-item-text">A refreshing smoothie made with tropical fruits like mango, pineapple, and coconut for a perfect summer drink.</p>  
+        <button class="buy-now-btn">Buy Now</button>
+        <div class="order-quantity" style="display: none;">
+          <label for="quantity">Quantity:</label>
+          <input type="number" id="quantity" min="1" value="1">
+          <button class="place-order">Place Order</button>
+        </div>
+      </div>
+    </div>                       
+  </div>            
+</div>
+<!-- Special Items Modal -->
+<div id="special-modal" class="modal">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <h2>Order Confirmation</h2>
+    <p>Call this number to place the order: <strong>+6789876545</strong></p>
+    <button class="modal-ok-btn">OK</button>
+  </div>
+</div>
+
+<!-- end Special Items Page -->
+
+
+
+          <!-- Contact Page -->
+          <div id="contact" class="tm-page-content">
+            <div class="tm-black-bg tm-contact-text-container">
+              <h2 class="tm-text-primary">Contact Foodfinda</h2>
+              <p>We’d love to hear from you! Whether you have questions about our menu, want to share feedback, or need assistance, feel free to get in touch. You can reach us via email at support@foodfinda.com or call us at +6789876545. For updates and promotions, follow us on social media through Facebook, Instagram, and Twitter. Your experience matters to us, and we’re here to make it the best!</p>
+            </div>
+            <div class="tm-black-bg tm-contact-form-container tm-align-right">
+              <form action="" method="POST" id="contact-form">
+                <div class="tm-form-group">
+                  <input type="text" name="name" class="tm-form-control" placeholder="Name" required="" />
+                </div>
+                <div class="tm-form-group">
+                  <input type="email" name="email" class="tm-form-control" placeholder="Email" required="" />
+                </div>        
+                <div class="tm-form-group tm-mb-30">
+                  <textarea rows="6" name="message" class="tm-form-control" placeholder="Message" required=""></textarea>
+                </div>        
+                <div>
+                  <button type="submit" class="tm-btn-primary tm-align-right">
+                    Submit
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <!-- end Contact Page -->
+        </main>
+      </div>    
+    </div>
+    <footer class="tm-site-footer">
+      <p class="tm-black-bg tm-footer-text">Copyright 2025 Foodfinda Restaurant
+      
+      | Design: <a href="#" class="tm-footer-link" rel="sponsored" target="_parent">Preeti team</a></p>
+    </footer>
+  </div>
+    
+  <!-- Background video -->
+  <div class="tm-video-wrapper">
+      <i id="tm-video-control-button" class="fas fa-pause"></i>
+      <video autoplay muted loop id="tm-video">
+          <source src="video/wave-cafe-video-bg.mp4" type="video/mp4">
+      </video>
+  </div>
+
+  <script src="js/jquery-3.4.1.min.js"></script>    
+  <script>
+
+    function setVideoSize() {
+      const vidWidth = 1920;
+      const vidHeight = 1080;
+      const windowWidth = window.innerWidth;
+      const windowHeight = window.innerHeight;
+      const tempVidWidth = windowHeight * vidWidth / vidHeight;
+      const tempVidHeight = windowWidth * vidHeight / vidWidth;
+      const newVidWidth = tempVidWidth > windowWidth ? tempVidWidth : windowWidth;
+      const newVidHeight = tempVidHeight > windowHeight ? tempVidHeight : windowHeight;
+      const tmVideo = $('#tm-video');
+
+      tmVideo.css('width', newVidWidth);
+      tmVideo.css('height', newVidHeight);
+    }
+
+    function openTab(evt, id) {
+      $('.tm-tab-content').hide();
+      $('#' + id).show();
+      $('.tm-tab-link').removeClass('active');
+      $(evt.currentTarget).addClass('active');
+    }    
+
+    function initPage() {
+      let pageId = location.hash;
+
+      if(pageId) {
+        highlightMenu($(`.tm-page-link[href^="${pageId}"]`)); 
+        showPage($(pageId));
+      }
+      else {
+        pageId = $('.tm-page-link.active').attr('href');
+        showPage($(pageId));
+      }
+    }
+
+    function highlightMenu(menuItem) {
+      $('.tm-page-link').removeClass('active');
+      menuItem.addClass('active');
+    }
+
+    function showPage(page) {
+      $('.tm-page-content').hide();
+      page.show();
+    }
+
+    $(document).ready(function(){
+
+      /***************** Pages *****************/
+
+      initPage();
+
+      $('.tm-page-link').click(function(event) {
+        
+        if(window.innerWidth > 991) {
+          event.preventDefault();
+        }
+
+        highlightMenu($(event.currentTarget));
+        showPage($(event.currentTarget.hash));
+      });
+
+      
+      /***************** Tabs *******************/
+
+      $('.tm-tab-link').on('click', e => {
+        e.preventDefault(); 
+        openTab(e, $(e.target).data('id'));
+      });
+
+      $('.tm-tab-link.active').click(); // Open default tab
+
+
+      /************** Video background *********/
+
+      setVideoSize();
+
+      // Set video background size based on window size
+      let timeout;
+      window.onresize = function(){
+        clearTimeout(timeout);
+        timeout = setTimeout(setVideoSize, 100);
+      };
+
+      // Play/Pause button for video background      
+      const btn = $("#tm-video-control-button");
+
+      btn.on("click", function(e) {
+        const video = document.getElementById("tm-video");
+        $(this).removeClass();
+
+        if (video.paused) {
+          video.play();
+          $(this).addClass("fas fa-pause");
+        } else {
+          video.pause();
+          $(this).addClass("fas fa-play");
+        }
+      });
+    });
+      
+  </script>
+</body>
+</html>
